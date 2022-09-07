@@ -1,0 +1,123 @@
+* { margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.contenedor div {
+    padding: 20px;
+}
+
+.subT {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family:'Fraunces', serif ;
+    font-weight: 700;
+    color: hsl(228, 21%, 14%);
+}
+
+.descripcion {
+    color: hsl(228, 12%, 48%);
+    /* color: hsl(228, 12%, 14%); */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.precioN {
+    color: hsl(158, 36%,37%);
+    font-size: 25px;
+    font-family: 'Fraunces' , serif;
+    font-weight: 700;
+}
+
+.precioV {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    background-color: hsl(158, 36%,37%);
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+}
+
+button img {
+    /* height: 15px; */
+    width: 15px;
+}
+
+.imgMobile {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .contenedor {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width:600px ;     
+        height: auto;
+    }
+    .imgDesktop {
+        display: none;
+    }
+    .imgMobile {
+        display: block;
+        width: 320px;
+        object-fit: cover;
+
+    }
+}
